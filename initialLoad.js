@@ -10,3 +10,11 @@ img.style.left = '0';
 div.appendChild(img);
 document.body.appendChild(div);
 div.style.display = "none";
+function bother(){
+    var img = document.getElementById("judger");
+    if (img.style.display === "none") {
+        img.style.display = "block";
+    }
+}
+
+window.setInterval(bother, 15000);

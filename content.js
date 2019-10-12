@@ -5,5 +5,7 @@ window.onload = function () {
     toggleButton.onclick = function() {
         chrome.tabs.executeScript({file: "toggleImage.js"});
     };
+
+    
     
 };
