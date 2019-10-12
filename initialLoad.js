@@ -9,4 +9,4 @@ img.style.bottom = '0';
 img.style.left = '0';
 div.appendChild(img);
 document.body.appendChild(div);
-//img.style.display = "none";
+div.style.display = "none";
