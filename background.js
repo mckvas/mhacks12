@@ -9,3 +9,5 @@ chrome.browserAction.onClicked.addListener(function (tab) {
         file: 'content.js'
     });
 });
+
+window.setInterval()
