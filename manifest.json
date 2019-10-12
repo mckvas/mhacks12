@@ -2,12 +2,18 @@
     "name": "Dude",
     "version": "1.0",
     "description": "Build an Extension!",
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
     "manifest_version": 2,
     "page_action": {
       "default_popup": "popup.html",
       "default_icon": {
+        "16": "images/bojack16.png",
         "48": "images/bojack48.png",
         "128": "images/bojack128.png"
       }
-    }
+    },
+    "permissions": ["storage"]
 }
