@@ -8,7 +8,17 @@ img.style.position = 'fixed';
 img.style.bottom = '0';
 img.style.left = '0';
 div.appendChild(img);
+var para = document.createElement("p");
+var node = document.createTextNode("GET YOUR SHIT TOGETHER.");
+para.style.bottom = "100px";
+para.style.left = "100px";
+para.style.position = 'fixed';
+para.style.backgroundColor = "white";
+para.appendChild(node);
+div.appendChild(para);
 document.body.appendChild(div);
+
+
 div.style.display = "none";
 
 function hideDude() {
