@@ -6,14 +6,20 @@
       "scripts": ["background.js"],
       "persistent": false
     },
+    "web_accessible_resources": [
+      "pic.jpg"
+  ],
+ 
+ "content_scripts": [{
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css":["css.css"]
+   }],
     "manifest_version": 2,
-    "page_action": {
+    "browser_action": {
       "default_popup": "popup.html",
-      "default_icon": {
-        "16": "images/bojack16.png",
-        "48": "images/bojack48.png",
-        "128": "images/bojack128.png"
-      }
+      "default_icon": "images/bojack16.png",
+      "default_title": "Bojack gon remind ya"
     },
-    "permissions": ["storage"]
+    "permissions": ["activeTab", "storage"]
 }
