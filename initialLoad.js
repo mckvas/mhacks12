@@ -10,6 +10,19 @@ img.style.left = '0';
 div.appendChild(img);
 document.body.appendChild(div);
 div.style.display = "none";
+
+function hideDude() {
+    if (div.style.display !== "none") {
+        div.style.display = "none";
+    }
+}
+
+function displayDude() {
+    if (div.style.display === "none") {
+        div.style.display = "block";
+    }
+}
+
 function bother(){
     var img = document.getElementById("judger");
     if (img.style.display === "none") {
@@ -17,4 +30,6 @@ function bother(){
     }
 }
 
-window.setInterval(bother, 15000);
+var recurring_bother = window.setInterval(bother, 7000);
+window.clearInterval(recurring_bother);
+var bother_on = false;
